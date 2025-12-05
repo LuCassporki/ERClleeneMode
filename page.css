@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: double 5px black;
+}
+
+body {
+  width: 97vw;
+  height: auto;
+  border: solid 10px red;
+}
+
+header {
+  width: 100%;
+  height: 20vh;
+  background-color: lightgreen;
+  text-align: center;
+  line-height: 10vh;
+  font-size: 28px;
+}
+main {
+  width: 100%;
+  height: auto;
+  min-height: 70vh;
+  background-color: lightblue;
+  text-align: center;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.carrousel {
+  width: 100%;
+  height: 300px;
+}
+.zone {
+  width: 30%;
+  height: auto;
+}
+.z2 {
+  justify-content: space-evenly;
+}
+.cadre {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  margin: auto;
+  border: solid 2px black;
+}
+
+.rotation {
+  position: relative;
+  animation: rotation 15s infinite linear;
+}
+footer {
+  width: 100%;
+  height: 10vh;
+  background-color: lightgray;
+  text-align: center;
+  line-height: 10vh;
+  font-size: 20px;
+}
+
+@keyframes rotation {
+  0% {
+    top: 0%;
+    left: 0%;
+    /* transform: translatex(0px); */
+  }
+  50%{
+    top: 0%;
+    left: 100%;
+    /* transform: translatex(2000px); */
+  }
+  100% {
+    top: 0%;
+    left: 0%;
+    /* transform: translatex(0px); */
+  }
+}
+
+.hz {
+  display: flex;
+  flex-direction: row;
+}
+.vr {
+  display: flex;
+  flex-direction: column;
+}
+
+/* #region logo */
+
+.logo {
+  width: 800px;
+  height: 800px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+span {
+  font-size: 10rem;
+  font-family: Arial, sans-serif;
+  position: absolute;
+  translate: 0% 0%;
+}
+
+.c {
+  /* color: red; */
+  rotate: -90deg;
+  top: 50%;
+  left: 48%;
+  translate: -50% -50%;
+  transform: scale(1.2, 1.9);
+}
+.i5,
+.i4,
+.i3,
+.i2,
+.i1 {
+  transform: scale(1, 1);
+  top: 90%;
+  left: 85%;
+}
+.i5 {
+  top: 395px;
+  left: 50%;
+  transform: scale(1.5, 5);
+  translate: -50% -50%;
+}
+.i4 {
+  rotate: 90deg;
+  top: 11px;
+  left: 300px;
+  translate: 0% 0%;
+  transform: scale(1.5, 1.5);
+}
+.i3 {
+  rotate: 90deg;
+  top: 220px;
+  left: 330px;
+  translate: 0% 0%;
+  transform: scale(1.5, 1.5);
+}
+.i2 {
+  rotate: 90deg;
+  top: 390px;
+  left: 270px;
+  transform: scale(1.5, 2);
+}
+.i1 {
+  rotate: -45deg;
+  top: 445px;
+  left: 465px;
+  transform: scale(1.5, 2);
+}
+/* #endregion logo */
+
+.logo_conteneur {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-image: url("logo/logoU.png");
+  background-repeat: no-repeat;
+  background-size: 98%;
+  background-position: center;
+  z-index: 1000;
+}
+
+
+/* #region defile */
+.defile {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  border: solid 2px black;
+  position: relative;
+}
+.modeles {
+  width: 100px;
+  height: 100px;
+  background-color: lightgray;
+  margin: 10px;
+  animation: marche 10s infinite linear;
+}
+@keyframes marche {
+  0% {
+    transform: translate(50% , 0%);
+  }
+  10% {
+    transform: translate(30% , 100%);
+  }
+  40% {
+    transform: translate(30% , 600%);
+  }
+  45% {
+    transform: translate(100% , 600%);
+  }
+  50% {
+    transform: translate(200% , 600%);
+  }
+  55% {
+    transform: translate(300% , 600%);
+  }
+  85% {
+    transform: translate(300% , 0%);
+  }
+  90% {
+    transform: translate(200% , 0%);
+  }
+  95% {
+    transform: translate(100% , 0%);
+  }
+  100% {
+    transform: translate(50% , 0%);
+  }
+}
+/* #endregion defile */
+
+
+
+
+/* #region  model*/
+.modelz {
+display: flex;
+flex-wrap: wrap;
+}
+.mode4,
+.mode3,
+.mode2,
+.mode1 {
+  width: 200px;
+  height: 300px;
+  background-color: pink;
+  margin: 10px;
+}
+/* #endregion  */
+
+/* #region  */
+dl {
+  margin: 20px;
+background-color: lightyellow;
+  padding: 10px;
+}
+ol {
+  margin: 20px;
+background-color: lightcyan;
+  padding: 10px;
+  list-style-type: upper-roman;
+} 
+
+
+/* #endregion  */
+
+/* #region  */
+
+/* #endregion  */
