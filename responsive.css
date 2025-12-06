@@ -1,0 +1,52 @@
+@media(max-width: 400px) {
+    body {
+        border: solid 1px yellow;
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+    }
+
+    
+main {
+  width: 100%;
+  height: auto;
+  min-height: 70vh;
+  background-color: lightblue;
+  text-align: center;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.zone {
+  width: 100%;
+  height: auto;
+justify-content: center;
+}
+
+.z2 {
+    border: solid 1px red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
