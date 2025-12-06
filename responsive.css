@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin: auto;
   }
 
   .logo_conteneur {
@@ -18,7 +19,7 @@
     h1 {
       border: solid 1px red;
     text-align: right;
-    margin:30px 30px 0 0;
+    margin:30px 10px 0 0;
     
     }
   
