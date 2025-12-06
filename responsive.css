@@ -9,23 +9,11 @@
   .logo_conteneur {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    background-image: url("logo/logoU.png");
-    background-repeat: no-repeat;
-    background-size: 98%;
-    background-position: center;
-    z-index: 1000;
 }
 
   header {
       width: 99%;
       height: auto;
-      background-color: lightgreen;
-      text-align: center;
-      font-size: 28px;
     }
     h1 {
       border: solid 1px red;
@@ -35,16 +23,6 @@
     }
   
 
-  main {
-    width: 100%;
-    height: auto;
-    min-height: 70vh;
-    background-color: lightblue;
-    text-align: center;
-    font-size: 24px;
-    display: flex;
-    flex-direction: column;
-  }
 
   .zone {
     width: 100%;
