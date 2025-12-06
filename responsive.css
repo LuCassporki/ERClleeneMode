@@ -1,52 +1,60 @@
-@media(max-width: 400px) {
-    body {
-        border: solid 1px yellow;
-        width: 370px;
-        display: flex;
-        flex-direction: column;
-        justify-content:space-evenly;
+@media (max-width: 400px) {
+  body {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .logo_conteneur {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-image: url("logo/logoU.png");
+    background-repeat: no-repeat;
+    background-size: 98%;
+    background-position: center;
+    z-index: 1000;
+}
+
+  header {
+      width: 99%;
+      height: auto;
+      background-color: lightgreen;
+      text-align: center;
+      font-size: 28px;
     }
-
+    h1 {
+      border: solid 1px red;
+    text-align: right;
+    margin:30px 30px 0 0;
     
-main {
-  width: 100%;
-  height: auto;
-  min-height: 70vh;
-  background-color: lightblue;
-  text-align: center;
-  font-size: 24px;
-  display: flex;
-  flex-direction: column;
-}
+    }
+  
 
+  main {
+    width: 100%;
+    height: auto;
+    min-height: 70vh;
+    background-color: lightblue;
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+  }
 
-.zone {
-  width: 100%;
-  height: auto;
-justify-content: center;
-}
+  .zone {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
 
-.z2 {
-    border: solid 1px red;
+  .z2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-  
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  }
 }
