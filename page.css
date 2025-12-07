@@ -131,21 +131,26 @@ footer {
 
 /* #endregion logo */
 .logo_conteneur {
-  box-shadow: 0px 0px 100px 100px black;
+  box-shadow: -20px -20px 50px 50px white;
   width: 150px;
   height: 150px;
   border-radius: 50%;
   position: fixed;
   top: 10px;
   left: 5px;
-  opacity: .8;
+  opacity: .9;
   background-image: url("logo/logo.jpg");
   background-repeat: no-repeat;
   background-size: 140%;
   background-position: center;
   z-index: 1000;
   border: solid 2px white;
-  pointer-events: none;
+  /* pointer-events: none; */
+}
+
+.logo_conteneur:active {
+  box-shadow: 0px 0px 50px 1700px white;
+  opacity: 1;
 }
 
 
