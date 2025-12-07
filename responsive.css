@@ -7,22 +7,42 @@
     margin: auto;
   }
 
-  .logo_conteneur {
-    width: 100px;
-    height: 100px;
-}
-
   header {
       width: 99%;
       height: auto;
     }
-    h1 {
-      border: solid 1px red;
-    text-align: right;
-    margin:30px 10px 0 0;
-    
-    }
-  
+ h1 {
+  font-size: 4.5rem;
+  color: black;
+  text-shadow: 2px 5px 10px white;
+  position: fixed;
+  top: 50px;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+  z-index: 500;
+  pointer-events: none;
+}
+  .logo_conteneur {
+  box-shadow: -80px -60px 50px 50px white;
+  width: 100px;
+  height: 100px;
+  border-radius: 0px 60px 30px 70px;
+  position: fixed;
+  top: 1px;
+  left: -5px;
+  opacity: .8;
+  background-image: url("logo/logo2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  z-index: 1000;
+  border: solid 2px white;
+}
+
+nav {
+margin-top: 90px;
+}
 
 
   .zone {
