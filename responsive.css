@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     margin: auto;
+    border: solid 2px white;
   }
 
   header {
