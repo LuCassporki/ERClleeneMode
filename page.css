@@ -26,7 +26,7 @@ header {
 h1 {
   font-size: 15rem;
   color: black;
-  text-shadow: 2px 2px 5px white;
+  text-shadow: -2px -2px 5px white;
   position: fixed;
   top: 100px;
   left: 50%;
@@ -130,15 +130,19 @@ footer {
 /* #region logo */
 
 /* #endregion logo */
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
 .logo_conteneur {
-  box-shadow: -20px -20px 50px 50px white;
   width: 150px;
   height: 150px;
   border-radius: 50%;
   position: fixed;
   top: 10px;
   left: 5px;
-  opacity: .9;
   background-image: url("logo/logo.jpg");
   background-repeat: no-repeat;
   background-size: 140%;
@@ -148,11 +152,15 @@ footer {
   /* pointer-events: none; */
 }
 
-.logo_conteneur:active {
-  box-shadow: 0px 0px 50px 1700px white;
-  opacity: 1;
+.sun {
+  box-shadow: 0px 0px 50px 1700px rgb(0, 0, 0);
+  opacity: .97;
 }
 
+.moon {
+  box-shadow: -20px -20px 50px 50px white;
+  opacity: .9;
+}
 
 /* #region defile */
 .defile {

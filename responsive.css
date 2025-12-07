@@ -25,17 +25,15 @@
     pointer-events: none;
   }
   .logo_conteneur {
-    box-shadow: -80px -60px 50px 50px white;
     width: 100px;
     height: 100px;
-    border-radius: 0px 60px 30px 70px;
+    border-radius: 50px;
     position: fixed;
     top: 10px;
     left: -5px;
-    opacity: 0.8;
-    background-image: url("logo/logo2.jpg");
+    background-image: url("logo/logo.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 150%;
     background-position: center;
     z-index: 1000;
     border: solid 2px white;
