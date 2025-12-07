@@ -1,11 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: black;
-  /* border: solid 1px white; */
+  background-color: white;
+  /* border: solid 1px black; */
   border-radius: 5px;
-  color: white;
-  /* border: double 5px black; */
+  color: black;
+  /* border: double 5px white; */
 }
 
 body {
@@ -18,15 +18,15 @@ header {
   width: 100%;
   height: auto;
 
-  color: white;
+  color: black;
   text-align: center;
   line-height: 10vh;
   font-size: 28px;
 }
 h1 {
   font-size: 15rem;
-  color: black;
-  text-shadow: -2px -2px 5px white;
+  color: white;
+  text-shadow: 2px 2px 5px black;
   position: fixed;
   top: 100px;
   left: 50%;
@@ -38,16 +38,16 @@ nav {
   width: 100%;
   height: auto;
 margin-top: 200px;
-  color: gainsboro;
+  color: black;
   text-align: center;
   line-height: 10vh;
   font-size: 20px;
- box-shadow: -2px -2px 10px 0px white;}
+ box-shadow: -2px -2px 10px 0px black;}
 main {
   width: 100%;
   height: auto;
   min-height: 70vh;
- box-shadow: -2px -2px 10px 0px white;
+ box-shadow: -2px -2px 10px 0px black;
   text-align: center;
   font-size: 24px;
   display: flex;
@@ -66,7 +66,7 @@ main {
   height: auto;
 }
 .z2 {
- box-shadow: -1px -1px 10px 0px white;
+ box-shadow: -1px -1px 10px 0px black;
    display: flex;
 
   flex-direction: row;
@@ -75,7 +75,7 @@ main {
 }
 
 .cadre {
- box-shadow: -2px -2px 10px 0px white;
+ box-shadow: -2px -2px 10px 0px black;
    justify-content: space-evenly;
   width: 50px;
   height: 50px;
@@ -84,15 +84,15 @@ main {
 }
 
 .carrousel {
-  box-shadow: 0px 0px 40px 30px black;
-  color: white;
+  box-shadow: 0px 0px 40px 30px white;
+  color: black;
   width: 100%;
   height: 280px;
   position: relative;
   animation: rotation 15s infinite linear;
 }
 footer {
-  color: white;
+  color: black;
   width: 100%;
   height: 100px;
   text-align: center;
@@ -136,19 +136,28 @@ button {
   cursor: pointer;
   padding: 0;
 }
-.logo_conteneur {
+
+
+.logo_conteneur2 {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   position: fixed;
   top: 10px;
-  left: 5px;
+  left: 10px;
   background-image: url("logo/logo.jpg");
   background-repeat: no-repeat;
   background-size: 140%;
   background-position: center;
   z-index: 1000;
-  border: solid 2px white;
+  border: solid 2px black;
+  /* pointer-events: none; */
+}
+.logo_conteneur {
+  position: fixed;
+  top: 80%;
+  left: 90%;
+  z-index: 1000;
   /* pointer-events: none; */
 }
 
@@ -160,7 +169,9 @@ button {
 
 .moon {
   transition: all 0.4s ease-in-out;
-  box-shadow: -20px -20px 50px 50px white;
+}
+.moon2 {
+  box-shadow: -20px -20px 50px 50px rgba(255, 255, 0, 0.459);
   opacity: .9;
 }
 
@@ -170,13 +181,13 @@ button {
   height: 750px;
   overflow: hidden;
   position: relative;
-  box-shadow: -2px -2px 10px 0px white;
+  box-shadow: -2px -2px 10px 0px black;
 }
 .modeles {
   width: 100px;
   height: 100px;
   margin: 10px;
- box-shadow: -2px -2px 10px 0px white;
+ box-shadow: -2px -2px 10px 0px black;
    animation: marche 10s infinite linear;
 }
 @keyframes marche {
@@ -223,10 +234,10 @@ button {
 .mode3,
 .mode2,
 .mode1 {
-  box-shadow: -2px -2px 10px 0px white;
+  box-shadow: -2px -2px 10px 0px black;
   width: 200px;
   height: 300px;
-  color: white;
+  color: black;
   margin: 10px;
 }
 /* #endregion  */
@@ -234,7 +245,7 @@ button {
 /* #region  */
 
 dl {
- box-shadow: -2px -2px 10px 0px white;
+ box-shadow: -2px -2px 10px 0px black;
    margin: 20px;
   padding: 10px;
 }
@@ -245,7 +256,7 @@ ol {
 }
 
 li {
- box-shadow: -2px -2px 10px 0px white;
+ box-shadow: -2px -2px 10px 0px black;
 }
 
 /* #endregion  */

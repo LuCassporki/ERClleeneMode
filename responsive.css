@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     margin: auto;
-    border: solid 2px white;
+    border: solid 2px black;
   }
 
   header {
@@ -14,8 +14,8 @@
   }
   h1 {
     font-size: 4.5rem;
-    color: black;
-    text-shadow: 2px 2px 5px white;
+    color: white;
+    text-shadow: 2px 2px 5px black;
     position: fixed;
     top: 50px;
     left: 60%;
@@ -36,7 +36,7 @@
     background-size: 150%;
     background-position: center;
     z-index: 1000;
-    border: solid 2px white;
+    border: solid 2px black;
   }
 
   nav {
@@ -60,6 +60,6 @@
   height: 650px;
   overflow: hidden;
   position: relative;
-  box-shadow: 0px 0px 10px 0px white;
+  box-shadow: 0px 0px 10px 0px black;
 }
 }
