@@ -2,10 +2,8 @@
   margin: 0;
   padding: 0;
   background-color: white;
-  /* border: solid 1px black; */
   border-radius: 5px;
   color: black;
-  /* border: double 5px white; */
 }
 
 body {
@@ -43,13 +41,12 @@ h1 {
   background-color: rgba(0, 0, 0, 0);
   text-shadow: 2px 2px 5px black;
   z-index: 1001;
-
 }
 
 .textOn {
   top: 100%;
   left: 100%;
-  opacity: .1;
+  opacity: 0.1;
   transition: all 1.5s ease-in-out;
 }
 .textOff {

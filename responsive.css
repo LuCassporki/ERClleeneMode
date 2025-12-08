@@ -5,7 +5,6 @@
     flex-direction: column;
     justify-content: space-evenly;
     margin: auto;
-    border: solid 2px black;
   }
 
   header {
@@ -34,26 +33,24 @@
     background-position: center;
     z-index: 1000;
   }
-.text {
-  position: fixed;
-  font-size: 1.2rem;
-  color: white;
-  width: 80%;
-  background-color: rgba(0, 0, 0, 0);
-  text-shadow: 2px 2px 5px black;
-  z-index: 1001;
+  .text {
+    position: fixed;
+    font-size: 1.2rem;
+    color: white;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0);
+    text-shadow: 2px 2px 5px black;
+    z-index: 1001;
+  }
 
-}
-
-.textOn {
-  top: 100%;
-  left: 100%;
-}
-.textOff {
-  top: 100px;
-  left: 70px;
-}
-
+  .textOn {
+    top: 100%;
+    left: 100%;
+  }
+  .textOff {
+    top: 100px;
+    left: 70px;
+  }
 
   nav {
     margin-top: 120px;
@@ -72,10 +69,10 @@
   }
 
   .defile {
-  width: 100%;
-  height: 650px;
-  overflow: hidden;
-  position: relative;
-  box-shadow: 0px 0px 10px 0px black;
-}
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 10px 0px black;
+  }
 }
