@@ -34,6 +34,31 @@ h1 {
   opacity: 1;
   z-index: 500;
 }
+
+.text {
+  position: fixed;
+  font-size: 4rem;
+  color: white;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 2px 2px 5px black;
+  z-index: 1001;
+
+}
+
+.textOn {
+  top: 100%;
+  left: 100%;
+  opacity: .1;
+  transition: all 1.5s ease-in-out;
+}
+.textOff {
+  top: 120px;
+  left: 140px;
+  opacity: 1;
+  transition: all 1.5s ease-out;
+}
+
 nav {
   width: 100%;
   height: auto;
@@ -154,20 +179,20 @@ button {
 }
 .logo_conteneur {
   position: fixed;
-  top: 80%;
-  left: 90%;
+  top: 100%;
+  left: 100%;
   z-index: 1000;
   /* pointer-events: none; */
 }
 
 .sun {
-  transition: all 0.8s ease-in-out;
+  transition: all 1s ease-in-out;
   box-shadow: -100px 0px 50px 1800px rgb(0, 0, 0);
   opacity: 0.99;
 }
 
 .moon {
-  transition: all 0.4s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 .moon2 {
   /* box-shadow: -20px -20px 50px 50px rgba(255, 255, 0, 0.459); */
