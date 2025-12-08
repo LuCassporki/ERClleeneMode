@@ -10,7 +10,7 @@
   header {
     width: 99%;
     position: sticky;
-    top: 120px;
+    top: 100px;
     margin-top: 100px;
     display: flex;
     flex-direction: row;
@@ -20,15 +20,15 @@
   h1 {
     font-size: 4.5rem;
     position: fixed;
-    top: 80px;
+    top: 40px;
     left: 60%;
     transform: translate(-50%, -50%);
     z-index: 500;
     pointer-events: none;
   }
   .logo_conteneur2 {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50px;
     position: fixed;
     top: 10px;
@@ -69,8 +69,8 @@
   }
 
   .vr {
-  margin-top: 30px;
-}
+    margin-top: 10px;
+  }
 
   .zone {
     width: 100%;
