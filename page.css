@@ -25,6 +25,7 @@ h1 {
   font-size: 15rem;
   color: black;
   text-shadow: 5px 10px 10px black;
+  background: #00000000;
   position: fixed;
   top: 100px;
   left: 50%;
