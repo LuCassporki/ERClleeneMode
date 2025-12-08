@@ -14,13 +14,10 @@
   }
   h1 {
     font-size: 4.5rem;
-    color: white;
-    text-shadow: 2px 2px 5px black;
     position: fixed;
     top: 50px;
     left: 60%;
     transform: translate(-50%, -50%);
-    opacity: 0.9;
     z-index: 500;
     pointer-events: none;
   }
@@ -36,7 +33,6 @@
     background-size: 150%;
     background-position: center;
     z-index: 1000;
-    border: solid 2px black;
   }
 
   nav {

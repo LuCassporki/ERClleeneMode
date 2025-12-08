@@ -25,29 +25,30 @@ header {
 }
 h1 {
   font-size: 15rem;
-  color: white;
-  text-shadow: 2px 2px 5px black;
+  color: black;
+  text-shadow: 5px 10px 10px black;
   position: fixed;
   top: 100px;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.5;
+  opacity: 1;
   z-index: 500;
 }
 nav {
   width: 100%;
   height: auto;
-margin-top: 200px;
+  margin-top: 200px;
   color: black;
   text-align: center;
   line-height: 10vh;
   font-size: 20px;
- box-shadow: -2px -2px 10px 0px black;}
+  box-shadow: -2px -2px 10px 0px black;
+}
 main {
   width: 100%;
   height: auto;
   min-height: 70vh;
- box-shadow: -2px -2px 10px 0px black;
+  box-shadow: -2px -2px 10px 0px black;
   text-align: center;
   font-size: 24px;
   display: flex;
@@ -66,8 +67,8 @@ main {
   height: auto;
 }
 .z2 {
- box-shadow: -1px -1px 10px 0px black;
-   display: flex;
+  box-shadow: -1px -1px 10px 0px black;
+  display: flex;
 
   flex-direction: row;
   align-items: center;
@@ -75,8 +76,8 @@ main {
 }
 
 .cadre {
- box-shadow: -2px -2px 10px 0px black;
-   justify-content: space-evenly;
+  box-shadow: -2px -2px 10px 0px black;
+  justify-content: space-evenly;
   width: 50px;
   height: 50px;
 
@@ -137,7 +138,6 @@ button {
   padding: 0;
 }
 
-
 .logo_conteneur2 {
   width: 150px;
   height: 150px;
@@ -150,7 +150,6 @@ button {
   background-size: 140%;
   background-position: center;
   z-index: 1000;
-  border: solid 2px black;
   /* pointer-events: none; */
 }
 .logo_conteneur {
@@ -164,7 +163,7 @@ button {
 .sun {
   transition: all 0.8s ease-in-out;
   box-shadow: -100px 0px 50px 1800px rgb(0, 0, 0);
-  opacity: .99;
+  opacity: 0.99;
 }
 
 .moon {
@@ -172,7 +171,7 @@ button {
 }
 .moon2 {
   /* box-shadow: -20px -20px 50px 50px rgba(255, 255, 0, 0.459); */
-  opacity: .9;
+  opacity: 0.9;
 }
 
 /* #region defile */
@@ -187,8 +186,8 @@ button {
   width: 100px;
   height: 100px;
   margin: 10px;
- box-shadow: -2px -2px 10px 0px black;
-   animation: marche 10s infinite linear;
+  box-shadow: -2px -2px 10px 0px black;
+  animation: marche 10s infinite linear;
 }
 @keyframes marche {
   0% {
@@ -245,8 +244,8 @@ button {
 /* #region  */
 
 dl {
- box-shadow: -2px -2px 10px 0px black;
-   margin: 20px;
+  box-shadow: -2px -2px 10px 0px black;
+  margin: 20px;
   padding: 10px;
 }
 ol {
@@ -256,7 +255,7 @@ ol {
 }
 
 li {
- box-shadow: -2px -2px 10px 0px black;
+  box-shadow: -2px -2px 10px 0px black;
 }
 
 /* #endregion  */
