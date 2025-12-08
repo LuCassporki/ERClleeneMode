@@ -161,6 +161,7 @@ footer {
   flex-direction: row;
 }
 .vr {
+  margin-top: 210px;
   display: flex;
   flex-direction: column;
 }

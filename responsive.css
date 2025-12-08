@@ -68,6 +68,10 @@
     font-size: 0.8rem;
   }
 
+  .vr {
+  margin-top: 30px;
+}
+
   .zone {
     width: 100%;
     height: auto;
