@@ -10,20 +10,24 @@
 <body>
     <h1 title="ta marque">Eryphe</h1>
     <span class="text textOff"  id="text">L'art, pour etre admiré plainement<br>necessite une lune de lumiere, <br>  sois en la source... <br> Eryphe</span>
-    <header>
-        <button onclick="view()">
+    <button onclick="view()">
         <div class="logo_conteneur sun" id="logo"></div>
         <div class="logo_conteneur2 moon2" id="logo2"></div>
-    </button>
+</button>
+    <header>
         <nav>
-            zone de navigation page
+            <a href="#rotation"><button>garde robe</button></a>
+            <a href="#model"><button>manequins</button></a>
+            <a href="#defile"><button>défilé</button></a>
+            <a href="#collection"><button>collections</button></a>
+            <a href="#contact"><button>contact</button></a>
         </nav>
 
     </header>
     
     <main class="vr">
         
-        <div class="rotation">
+        <div class="rotation" id="rotation">
             <div class="carrousel hz">robe
         <div class="cadre" style="background-color: green;">0</div>
         <div class="cadre">0</div>
@@ -34,20 +38,22 @@
         <div class="cadre" style="background-color: red;">9</div>
     </div>
 </div>
+
 <div class="z2 hz">
-    <div class="zone modelz">
+    <div class="zone modelz" id="model">
         <div class="mode1">medel 1</div>
         <div class="mode2">medel 2</div>
         <div class="mode3">medel 3</div>
         <div class="mode4">medel 4</div>
     </div>
     
-    <div class="zone">
+    <div class="zone" id="defile">
             <div class="defile">
                 <div class="modeles">medel 1</div>
             </div>
     </div>
-    <div class="zone">
+
+    <div class="zone" id="collection">
         <ul>
             <dl>collection printent</dl>
             <li>collection 1</li>
@@ -72,7 +78,7 @@
 </div>
 </main>
  
-    <footer>footer</footer>
+    <footer id="contact">footer</footer>
 
    <script src="eryphe.js"></script>
 </body>
