@@ -104,10 +104,10 @@
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.7);
 }
 
-.modelz:hover .card:not(:hover) {
+/* .modelz:hover .card:not(:hover) {
   filter: blur(5px);
   opacity: 0.6;
-}
+} */
 
 .back p {
   font-size: 1.1rem;
