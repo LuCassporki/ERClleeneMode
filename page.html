@@ -1,85 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="page.css">
-    <link rel="stylesheet" href="responsive.css">
-    <title>page</title>
-</head>
-<body>
-    <h1 title="ta marque">Eryphe</h1>
-    <span class="text textOff"  id="text">L'art, pour etre admiré plainement<br>necessite une lune de lumiere, <br>  sois en la source... <br> Eryphe</span>
-    <button onclick="view()">
-        <div class="logo_conteneur sun" id="logo"></div>
-        <div class="logo_conteneur2 moon2" id="logo2"></div>
-</button>
-    <header>
-        <nav>
-            <a href="#rotation"><button>garde robe</button></a>
-            <a href="#model"><button>manequins</button></a>
-            <a href="#defile"><button>défilé</button></a>
-            <a href="#collection"><button>collections</button></a>
-            <a href="#contact"><button>contact</button></a>
-        </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="page.css">
+        <link rel="stylesheet" href="responsive.css">
+        <link rel="stylesheet" href="card model.css">
+        <title>page</title>
+    </head>
+    <body>
+        <h1 title="ta marque">Eryphe</h1>
+        <span class="text textOff" id="text">L'art, pour etre admiré
+            plainement<br>necessite une lune de lumiere, <br> sois en la
+            source... <br> Eryphe</span>
+        <button onclick="view()">
+            <div class="logo_conteneur sun" id="logo"></div>
+            <div class="logo_conteneur2 moon2" id="logo2"></div>
+        </button>
+        <header>
+            <nav>
+                <a href="#rotation"><button>garde robe</button></a>
+                <a href="#model"><button>manequins</button></a>
+                <a href="#defile"><button>défilé</button></a>
+                <a href="#collection"><button>collections</button></a>
+                <a href="#contact"><button>contact</button></a>
+            </nav>
 
-    </header>
-    
-    <main class="vr">
-        
-        <div class="rotation" id="rotation">
-            <div class="carrousel hz">robe
-        <div class="cadre" style="background-color: green;">0</div>
-        <div class="cadre">0</div>
-        <div class="cadre">1</div>
-        <div class="cadre" style="background-color: orange;">0</div>
-        <div class="cadre">7</div>
-        <div class="cadre">8</div>
-        <div class="cadre" style="background-color: red;">9</div>
-    </div>
-</div>
+        </header>
 
-<div class="z2 hz">
-    <div class="zone modelz" id="model">
-        <div class="mode1">medel 1</div>
-        <div class="mode2">medel 2</div>
-        <div class="mode3">medel 3</div>
-        <div class="mode4">medel 4</div>
-    </div>
-    
-    <div class="zone" id="defile">
-            <div class="defile">
-                <div class="modeles">medel 1</div>
+        <main class="vr">
+
+            <div class="rotation" id="rotation">
+                <div class="carrousel hz">robe
+                    <div class="cadre" style="background-color: green;">0</div>
+                    <div class="cadre">0</div>
+                    <div class="cadre">1</div>
+                    <div class="cadre" style="background-color: orange;">0</div>
+                    <div class="cadre">7</div>
+                    <div class="cadre">8</div>
+                    <div class="cadre" style="background-color: red;">9</div>
+                </div>
             </div>
-    </div>
 
-    <div class="zone" id="collection">
-        <ul>
-            <dl>collection printent</dl>
-            <li>collection 1</li>
-            <li>collection 1</li>
-            <li>collection 1</li>
-            <dl>collection ete</dl>
-            <li>collection 2</li>
-            <li>collection 2</li>
-            <li>collection 2</li>
-            <li>collection 2</li>
-            <dl>collection automne</dl>
-            <li>collection 3</li>
-            <li>collection 3</li>
-            <li>collection 3</li>
-            <li>collection 3</li>
-            <dl>collection hiver</dl>
-            <li>collection 4</li>
-            <li>collection 4</li>
-            <li>collection 4</li>
-        </ul>
-    </div>
-</div>
-</main>
- 
-    <footer id="contact">footer</footer>
+            <div class="z2 hz">
 
-   <script src="eryphe.js"></script>
-</body>
+                <div class="zone modelz" id="model">
+                    <div class="mode1 card">
+                        <div class="front">
+                            front
+                            <br>
+                            ici le model ou manequin
+                        </div>
+
+                        <div class="back">
+                            <span>
+                                <h3>back</h3>
+                                <p>description</p>
+                                <p>Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quisquam voluptates
+                                    consectetur eum commodi expedita eius ipsa
+                                    laborum corrupti mollitia debitis, quos, est
+                                    blanditiis quibusdam suscipit obcaecati
+                                    consequuntur saepe sapiente assumenda.</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="mode2">medel 2
+                        <span>
+
+                            <h4>titre description</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Similique molestiae fugiat
+                                impedit aliquid dignissimos magni provident
+                                sapiente eaque earum voluptate neque, cum sunt
+                                veritatis explicabo nisi sed, tempora minus
+                                culpa.</p>
+                        </span>
+                    </div>
+                    <div class="mode3">medel 3
+                        <span>
+
+                            <h4>titre description</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Similique molestiae fugiat
+                                impedit aliquid dignissimos magni provident
+                                sapiente eaque earum voluptate neque, cum sunt
+                                veritatis explicabo nisi sed, tempora minus
+                                culpa.</p>
+                        </span>
+                    </div>
+                    <div class="mode4">medel 4
+                        <span>
+
+                            <h4>titre description</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Similique molestiae fugiat
+                                impedit aliquid dignissimos magni provident
+                                sapiente eaque earum voluptate neque, cum sunt
+                                veritatis explicabo nisi sed, tempora minus
+                                culpa.</p>
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="zone" id="defile">
+                    <div class="defile">
+                        <div class="modeles">medel 1</div>
+                    </div>
+                </div>
+
+                <div class="zone" id="collection">
+                    <ul>
+                        <dl>collection printent</dl>
+                        <li>collection 1</li>
+                        <li>collection 1</li>
+                        <li>collection 1</li>
+                        <dl>collection ete</dl>
+                        <li>collection 2</li>
+                        <li>collection 2</li>
+                        <li>collection 2</li>
+                        <li>collection 2</li>
+                        <dl>collection automne</dl>
+                        <li>collection 3</li>
+                        <li>collection 3</li>
+                        <li>collection 3</li>
+                        <li>collection 3</li>
+                        <dl>collection hiver</dl>
+                        <li>collection 4</li>
+                        <li>collection 4</li>
+                        <li>collection 4</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <footer id="contact">footer</footer>
+
+        <script src="eryphe.js"></script>
+    </body>
 </html>

@@ -1,0 +1,260 @@
+/* #region model */
+/* Container Flexbox */
+.modelz {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.mode2,
+.mode3,
+.mode4 {
+  /* On applique les styles de base à ces cartes aussi */
+  width: 200px;
+  height: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+/* #endregion model */
+
+/* #region card flip */
+/* 🃏 Le Conteneur de la Carte */
+.card {
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  /* --- Les clés du 3D Flip --- */
+  position: relative; /* Nécessaire pour positionner les faces */
+  perspective: 1000px; /* Établit la profondeur 3D pour l'effet de perspective */
+  transform-style: preserve-3d; /* Assure que les enfants (front/back) sont en 3D */
+  transition: transform 0.6s ease-in-out; /* Ajoute l'animation de rotation */
+
+  /* On retire le 'transform: rotateY(180deg)' initial ici */
+}
+
+/* 🖼️ Styles de base pour les faces */
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Utilisation de 100% pour couvrir le .card */
+  height: 100%;
+
+  /* Les styles que vous aviez pour l'apparence */
+  color: blanchedalmond;
+  border-radius: 20px;
+  background-size: cover; /* Mieux que 100% pour couvrir l'espace */
+  padding: 10px; /* Ajout d'un padding pour le contenu */
+
+  /* --- La clé pour le 3D Flip --- */
+  backface-visibility: hidden; /* Cache la face quand elle est tournée à 180° */
+}
+
+/* ➡️ La Face Avant (Front) */
+.front {
+  /* Vos images */
+  background-image: url(gallery/coucher_soleil-black.jpg);
+  /* La face avant commence non tournée (0 degrés) */
+  transform: rotateY(0deg);
+  z-index: 2;
+}
+
+/* ⬅️ La Face Arrière (Back) */
+.back {
+  /* Vos images */
+  background-image: url(gallery/coucher_soleil_red.jpg);
+  border: solid 1px black;
+
+  /* La face arrière commence tournée de 180 degrés (cachée) */
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+.back h3,
+.back p {
+  color: white;
+  background-color: rgba(255, 252, 252, 0.1);
+}
+
+/* 🔄 L'Action de Rotation (Trigger) */
+/* Cette classe sera ajoutée/retirée par JavaScript */
+/*
+ .card.flipped {
+  transform: rotateY(180deg);
+} 
+*/
+/* Lorsque le .card est "flipped", il tourne de 180 degrés */
+
+/* --- Styles complémentaires (Optionnels) --- */
+
+/* Maintien de vos effets 'active' */
+.card:hover {
+  transform: translateY(-20px) scale(1) rotateY(180deg);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.7);
+}
+
+.modelz:hover .card:not(:hover) {
+  filter: blur(5px);
+  opacity: 0.6;
+}
+
+.back p {
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+/* #endregion card flip */
+
+/* #region description card */
+.mode2 {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-image: url(gallery/galaxy_blue_2.jpg);
+  background-size: cover;
+  color: white;
+}
+
+.mode2 span h4 {
+  text-align: center;
+}
+
+.mode2 span {
+  border: solid 1px black;
+  background-color: rgba(255, 255, 255, 0);
+  width: 190px;
+  height: 300px;
+
+  position: relative;
+  top: 78%;
+
+  display: block;
+  border-radius: 10px;
+  text-align: left;
+  color: black;
+  font-size: 1rem;
+
+  transition: all 1s ease-in-out;
+}
+
+.mode2:hover.mode2 span {
+  top: -10%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.mode2 span p,
+.mode2 span h4 {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* .visible {
+} */
+
+/* #endregion description card */
+
+/* #region description card */
+.mode3 {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-image: url(gallery/galaxy.jpg);
+  background-size: cover;
+  color: white;
+}
+
+.mode3 span h4 {
+  text-align: center;
+}
+
+.mode3 span {
+  border: solid 1px black;
+  background-color: rgba(255, 255, 255, 0);
+  width: 190px;
+  height: 300px;
+
+  position: relative;
+  top: 80%;
+  left: 90%;
+
+  display: block;
+  border-radius: 10px;
+  text-align: left;
+  color: black;
+  font-size: 1rem;
+
+  transition: all 1s ease-in-out;
+}
+
+.mode3:hover.mode3 span {
+  top: -10%;
+  left: 0%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.mode3 span p,
+.mode3 span h4 {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* .visible {
+} */
+
+/* #endregion description card */
+
+/* #region description card */
+.mode4 {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-image: url(gallery/nebuleuse_blue_2.jpg);
+  background-size: cover;
+  color: white;
+}
+
+.mode4 span h4 {
+  text-align: center;
+}
+
+.mode4 span {
+  border: solid 1px black;
+  background-color: rgba(255, 255, 255, 0);
+  width: 0px;
+  height: 0px;
+
+  overflow: hidden;
+
+  display: block;
+  border-radius: 10px;
+  text-align: left;
+  color: black;
+  font-size: 1rem;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.mode4:hover.mode4 span {
+  width: 190px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.mode4 span p,
+.mode4 span h4 {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* .visible {
+} */
+
+/* #endregion description card */

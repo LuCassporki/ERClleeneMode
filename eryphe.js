@@ -19,3 +19,20 @@ function view() {
     contenttxt.classList.add("textOff");
   }
 }
+
+// #region card
+// Attendre que la page soit chargée
+// document.addEventListener("DOMContentLoaded", () => {
+//   // Sélectionner toutes les cartes auxquelles nous voulons appliquer l'effet
+//   const cards = document.querySelectorAll(".card");
+
+//   cards.forEach((card) => {
+//     // Pour chaque carte, ajouter un écouteur d'événement au clic
+//     card.addEventListener("click", () => {
+//       // Basculer la classe 'flipped'.
+//       // Si elle est présente, elle est retirée. Si elle est absente, elle est ajoutée.
+//       card.classList.toggle("flipped");
+//     });
+//   });
+// });
+// #endregion card
