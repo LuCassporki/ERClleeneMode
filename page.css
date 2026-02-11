@@ -40,10 +40,11 @@ h1 {
   position: fixed;
   font-size: 3rem;
   color: white;
-  width: 80%;
+  width: 90%;
   background-color: rgba(0, 0, 0, 0);
   text-shadow: 2px 2px 5px black;
   z-index: 1001;
+  border: 5px solid white;
 }
 
 .textOn {
